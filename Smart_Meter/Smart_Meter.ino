@@ -1,32 +1,21 @@
 #define BLYNK_TEMPLATE_ID "TMPLdrYh0k9O"
 #define BLYNK_DEVICE_NAME "Helios"
 #define BLYNK_AUTH_TOKEN "d8lfwPoqZQay1E0GysZpcYPCgeAxjVmo"
-
 #define BLYNK_PRINT Serial
-
 
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
-
-
-
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(13, 12, 14, 27, 26, 25);
-
 #include "EmonLib.h"
 
- 
 EnergyMonitor emon;
- 
+
 #define vCalibration 83.3
 #define currCalibration 0.50
  
-
 char auth[] = BLYNK_AUTH_TOKEN;
-
-// Your WiFi credentials.
-// Set password to "" for open networks.
 char ssid[] = "Tecstorm2022";
 char pass[] = "2022Tecstorm";
 
